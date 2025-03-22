@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Technical Documentation</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header class="nav-header">Python Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Data_types">Data types</a></li>
+      <li><a class="nav-link" href="#Control_structures">Control structures</a></li>
+      <li><a class="nav-link" href="#Functions">Functions</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <!-- Poner los ids -->
+      <header>Introduction</header>
+      <article>
+        <p>
+          Python is a high-level, interpreted programming language that emphasizes simplicity and code readability.<br>
+          Its clear and concise syntax makes it ideal for both beginners and experienced developers.
+        </p>
+        <pre><code>
+print("Hello, World")
+        </code></pre>
+      </article>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <article>
+        <p>
+          Variables in Python are used to store values, and their types are automatically determined at runtime.<br>
+          Python supports several data types, which we'll see in a while. Python has no command for declaring variables.
+        </p>
+        <pre><code>
+x = 5
+y = "John"
+print(x)
+print(y)
+        </code></pre>
+      </article>
+    </section>
+    <section class="main-section" id="Data_types">
+      <header>Data types</header>
+      <article>
+        <p>
+          In programming, data type is an important concept, variables can store data of different types, and different
+          types can do different things.
+        </p>
+        <pre><code>
+# Most used types
+integer_var = 1
+float_var = 1.25
+string_var = "text"
+bool_var = True
+        </code></pre>
+        <p>
+          Python has the following data types built-in by default, in these categories:
+        </p>
+        <ul>
+          <li>Text type: <span class="light-code">str</span></li>
+          <li>Numeric types: <span class="light-code">int</span>, <span class="light-code">float</span>, <span
+              class="light-code">complex</span></li>
+          <li>Sequence Types: <span class="light-code">list</span>, <span class="light-code">tuple</span>, <span
+              class="light-code">range</span></li>
+          <li>Mapping Type: <span class="light-code">dict</span></li>
+          <li>Set Types: <span class="light-code">set</span>, <span class="light-code">frozenset</span></li>
+          <li>Boolean Type: <span class="light-code">bool</span></li>
+          <li>Binary Types: <span class="light-code">bytes</span>, <span class="light-code">bytearray</span>, <span
+              class="light-code">memoryview</span></li>
+          <li>None Type: <span class="light-code">NoneType</span></li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Control_structures">
+      <header>Control structures</header>
+      <article>
+        <p>
+          Python offers various control structures to manage program flow, such as conditionals and loops.
+        </p>
+        <p>
+          Conditionals include <span class="light-code">if</span>, <span class="light-code">elif</span>, and <span
+            class="light-code">else</span> statements, which allow you to execute code based on certain
+          conditions.
+        </p>
+        <p>
+          Loops, such as <span class="light-code">for</span> and <span class="light-code">while</span>, enable you
+          to repeat code multiple times.<br>
+        </p>
+        <p>
+          Additionally, Python provides control statements like <span class="light-code">break</span>, <span
+            class="light-code">continue</span>, and <span class="light-code">pass</span> to further manage the
+          flow within loops.
+        </p>
+        <pre><code>
+numero = 1
+while True: # Loops
+    # Conditionals
+    if numero == 10:
+        break # Control Satatements
+    else:
+        numero = numero + 1
+        </code></pre>
+      </article>
+    </section>
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <article>
+        <p>Functions allow you to reuse code and improve the organization of programs.</p>
+        <p>They are defined using the <span class="light-code">def</span> keyword, followed by the function name and
+          parentheses.</p>
+        <p>Functions can take arguments and return values. Here's an example of a simple function:</p>
+        <pre><code>
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))
+        </code></pre>
+        <p>In this example, the <span class="light-code">greet</span> function takes one argument, <span
+            class="light-code">name</span>, and returns a
+          greeting message. You can call this function with different arguments to get different results.</p>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
