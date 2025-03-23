@@ -102,6 +102,11 @@ pre code {
   border-radius: 4px;
   padding-left: 10px;
 }
+@media (max-width: 800px) {
+  pre code {
+    width: 80vw;
+  }
+}
 
 .light-code {
   background-color: #f0f0f0;
